@@ -1,0 +1,75 @@
+::-webkit-input-placeholder {
+    color: #fff
+}
+.header {
+    box-sizing: border-box;
+    height: 44px;
+    width: 420px;
+    display: flex;
+    padding: 7px 10px;
+    background: #0f88eb;
+}
+.header > form {
+    box-sizing: border-box;
+    height: 30px;
+    width: 100%;
+    position: relative;
+}
+.header > form > #label {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    font-size: 18px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+}
+.header > form > #label > span {
+    font-size: 16px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    color: #fff;
+}
+.header > form > input {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border-radius: 3px;
+    border: none;
+    background: rgba(108,161,231,0.6);
+    padding-left: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.header > #login {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.header > #login > span {
+    font-size: 20px;
+}
+
+#mask {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+}

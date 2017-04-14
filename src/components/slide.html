@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./comment/styles/comment.css" rel="stylesheet">
+    <link href="../common/styles/header.css" rel="stylesheet">
+    <link href="./comment/styles/commentFont.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body,
+        html {
+            background: #f5f5f5;
+        }
+
+        .wrap {
+            padding: 10px;
+        }
+
+        .commentWrap {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <form action="/api/search" method="get">
+            <button id="label" type="submit"><span class="icon-search"></span></button>
+            <input type="text" placeholder="搜索" name="keyword" />
+        </form>
+        <div id="login">
+            <span class="icon-user-circle-o"></span>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <div id="commentWrap"></div>
+    </div>
+</body>
+<script type="text/javascript" src="../model/model.js"></script>
+<script type="text/javascript" src="./comment/js/comment.js"></script>
+<script type="text/javascript" src="./comment/js/iframe_comments.js"></script>
+
+</html>

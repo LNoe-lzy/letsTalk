@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <p>添加comment</p>
+    <form action="/api/savecomment" method="post">
+        <input type="text" name="pageUrl" placeholder="pageUrl" />
+        <input type="text" name="userId" placeholder="userId" />
+        <input type="text" name="text" placeholder="text" />
+        <input type="text" name="commentTag" placeholder="commentTag" />
+        <input type="text" name="xpath" placeholder="xpath" />
+        <input type="text" name="comment" placeholder="comment" />
+        <button type="submit">send</button>
+    </form>
+    <p>添加reply</p>
+    <form action="/api/savereply" method="post">
+        <input type="text" name="commentId" placeholder="commentId" />
+        <input type="text" name="userId" placeholder="userId" />
+        <input type="text" name="repliedUserId" placeholder="repliedUserId" />
+        <input type="text" name="text" placeholder="text" />
+        <button type="submit">send</button>
+    </form>
+    <p>搜索 </p>
+    <form method="get" action="/api/search">
+        <input type="text" placeholder="text" name="keyword" />
+        <button type="submit">search</button>
+    </form>
+</body>
+
+</html>

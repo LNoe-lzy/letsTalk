@@ -1,0 +1,11 @@
+{
+  "name": "letstalk",
+  "version": "1.0.0",
+  "description": "\"chrome扩展letstalk\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lzy",
+  "license": "ISC"
+}

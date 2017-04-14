@@ -1,0 +1,144 @@
+/*@import url('./font-awesome.min.css');*/
+
+#letTalkSlideBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10000;
+  transition: all .2s
+}
+
+#letTalkIframe {
+  position: fixed;
+  top: 0;
+  right: -440px;
+  width: 440px;
+  z-index: 10000;
+  height: 100%;
+  border: none;
+  overflow-y: hidden;
+  box-shadow: 0 0 3px #999;
+  background: rgb(245, 245, 245);
+  transition: all .2s;
+}
+
+#letTalkSlideBar>#letTalkShowBtn {
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  font-size: 14px;
+  text-align: center;
+  box-shadow: 0 0 3px #999;
+  background: #fff;
+  cursor: pointer;
+  box-sizing: border-box;
+  background: #0f88eb;
+  color: #fff;
+}
+
+#letTalkSlideBar>.letTalkTag {
+  box-sizing: border-box;
+  display: block;
+  /*box-shadow: 0 0 3px #999;*/
+  position: absolute;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 100;
+  color: #fff;
+  border-radius: 3px;
+  background: #0f88eb;
+  /*transition: all .8s;*/
+}
+
+#letTalkSlideBar>.letTalkTag::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: -5px;
+  margin-top: -5px;
+  width: 0;
+  height: 0;
+  border-right: 5px solid #0f88eb;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+
+.letTalkStyleHightLight {
+  background: #0f88eb;
+  color: #fff;
+}
+
+#letTalkTootip {
+  background: #0f88eb;
+  color: #fff;
+  border-radius: 3px;
+  position: absolute;
+  display: flex;
+  font-size: 12px;
+  text-align: center;
+  overflow: hidden;
+  z-index: 10000;
+  display: none;
+  transition: all .8s;
+}
+
+#letTalkTootip>button {
+  border: none;
+  padding: 5px 10px;
+  background: #0f88eb;
+  color: #fff;
+  outline: none;
+}
+
+#topTag,
+#bottomTag {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  right: 0;
+  width: 25px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 100;
+  color: #fff;
+  border-radius: 3px;
+  background: #0f88eb;
+  transition: all .8s;
+  display: none;
+  z-index: 10050;
+}
+
+#topTag::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  margin-left: -5px;
+  width: 0;
+  height: 0;
+  border-bottom: 5px solid #0f88eb;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+
+#bottomTag::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  margin-left: -5px;
+  width: 0;
+  height: 0;
+  border-top: 5px solid #0f88eb;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}

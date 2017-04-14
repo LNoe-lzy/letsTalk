@@ -1,0 +1,28 @@
+{
+  "name": "Lets Talk",
+  "description": "let us talk",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "http://192.168.0.103:3000/"
+  ],
+  "icons": {
+    "128": "./src/common/images/icon.png"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  // "content_scripts": [{
+  //   "matches": ["http://*/*"],
+  //   "js": ["./src/common/javascripts/letTalkStyle.js"],
+  //   "css": ["./src/common/styles/letTalkCommon.css"]
+  // }],
+  "browser_action": {
+    "default_title": "Let us talk"
+  },
+  "manifest_version": 2,
+  "web_accessible_resources": [
+    "*"
+  ]
+}
